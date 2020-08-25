@@ -6,5 +6,16 @@ def multtable(start, stop, number):
     for i in range(start, stop+1):
         print(f"{i} x {number} = {i*number}")
 
+
+    
+def powertable(to_power_of, the_base):
+    """
+    Prints the table with numbers resulting in counting all 
+    results of power to to_power_of, numbers in range of one to the_base
+    """
+    for i in range(1,the_base+1):
+        x = (i**to_power_of)
+        print (x)
+        
 if __name__ == '__main__':
-    multtable(1, 4, 7)
+    powertable(3,3)
